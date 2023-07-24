@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    
+</head>
+<body>
+    <h1><%= kindofday%> </h1>
+    <form action="/" method="post">
+        <input type="text" name="newItem" autocomplete="off">
+        <button type="submit">Add</button>
+        <ul>
+            <% for(let i=0;i < newarr.length; i++){ %>
+            <li> <%= newarr[i] %> </li>
+            <% } %>
+        </ul>
+    </form>
+    
+</body>
+</html>
